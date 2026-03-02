@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Pendaftaran Sederhana</title>
+	</head>
+	<body>
+		<form>
+			<table border="0">
+				<tr>
+					<td><label for="nama">Nama:</label></td>
+					<td><input type="text" name="username" id="nama" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="email">Email:</label></td>
+					<td><input type="email" name="email" id="email" /></td>
+				</tr>
+
+				<tr>
+					<td><label>Jenis Kelamin:</label></td>
+					<td>
+						<input type="radio" name="jk" id="laki-laki" />
+						<label for="laki-laki">Laki-laki</label>
+						<input type="radio" name="jk" id="perempuan" />
+						<label for="perempuan">Perempuan</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label>Hobi:</label></td>
+					<td>
+						<input type="checkbox" name="hobi1" id="mancing" />
+						<label for="mancing">Memancing</label>
+						<input type="checkbox" name="hobi2" id="berenang" />
+						<label for="berenang">Berenang</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="kota">Pilih Kota:</label></td>
+					<td>
+						<select name="pilih_kota" id="kota">
+							<option value="cirebon">Cirebon</option>
+							<option value="karawang">Karawang</option>
+							<option value="pekanbaru">Pekanbaru</option>
+							<option value="tasikmalaya">Tasikmalaya</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="foto">Upload Foto:</label></td>
+					<td><input type="file" name="foto" id="foto" /></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><button type="submit">Daftar</button></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
