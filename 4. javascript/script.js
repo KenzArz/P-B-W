@@ -1,10 +1,8 @@
 function cekNilai() {
-	// Ambil elemen
 	const nim = document.getElementById("nim").value;
 	const nilaiInput = document.getElementById("nilai").value;
 	const hasilDiv = document.getElementById("hasil");
 
-	// Validasi input kosong
 	if (nim === "" || nilaiInput === "") {
 		hasilDiv.innerHTML = "Error: NIM dan Nilai harus diisi!";
 		hasilDiv.className = "result-box error";
@@ -14,7 +12,6 @@ function cekNilai() {
 	const nilai = parseFloat(nilaiInput);
 	let hurufMutu = "";
 
-	// Logika penentuan huruf mutu berdasarkan gambar
 	if (nilai < 0 || nilai > 100) {
 		hasilDiv.innerHTML = "Nilai tidak valid!";
 		hasilDiv.className = "result-box error";
@@ -31,7 +28,6 @@ function cekNilai() {
 		hurufMutu = "E";
 	}
 
-	// Tampilkan hasil sukses
 	hasilDiv.className = "result-box success";
 	hasilDiv.innerHTML = `NIM: ${nim} <br> <strong>Huruf Mutu: ${hurufMutu}</strong>`;
 }

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Kasir Toko Modern</title>
     <style>
-        /* Menggunakan Style Konsisten dari Kasus Sebelumnya */
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +13,7 @@
         }
 
         header {
-            background-color: #9c1328; /* Header Merah */
+            background-color: #9c1328;
             color: white;
             text-align: center;
             padding: 25px;
@@ -42,7 +41,7 @@
         .sidebar {
             flex: 1;
             padding: 25px;
-            background-color: #bdc3c7; /* Sidebar Abu-abu */
+            background-color: #bdc3c7;
             border-radius: 12px;
             height: fit-content;
         }
@@ -54,7 +53,6 @@
             padding-left: 15px;
         }
 
-        /* Styling Form & Select Option */
         .form-group {
             margin-bottom: 20px;
         }
@@ -97,7 +95,6 @@
             background-color: #2980b9;
         }
 
-        /* Struk Pembayaran */
         .struk {
             margin-top: 30px;
             padding: 20px;
@@ -163,10 +160,8 @@
 
             <?php
             if (isset($_POST['hitung'])) {
-                // 1. Pajak dijadikan konstanta
                 define("PAJAK", 0.10); 
 
-                // 2. Data barang dalam array (untuk pencarian harga)
                 $daftarHarga = [
                     "Keyboard" => 150000,
                     "Mouse" => 80000,
@@ -177,10 +172,8 @@
                 $namaBarang = $_POST['pilih_barang'];
                 $hargaSatuan = $daftarHarga[$namaBarang];
                 
-                // 3. Jumlah beli dari variabel input
                 $jumlah = $_POST['jumlah'];
 
-                // 4. Perhitungan aritmatika
                 $totalSebelumPajak = $hargaSatuan * $jumlah;
                 $pajakNominal = $totalSebelumPajak * PAJAK;
                 $totalAkhir = $totalSebelumPajak + $pajakNominal;
