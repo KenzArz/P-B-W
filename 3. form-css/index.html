@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Praktikum 3 - box model</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="box">Selamat Datang di Website Sederhana</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">Beranda</a></li>
+				<li><a href="#">Tentang</a></li>
+				<li><a href="#">Layanan</a></li>
+				<li><a href="#">Kontak</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<section class="content">
+				<h2>Formulir Pendaftaran</h2>
+				<p>Silahkan isi formulir di bawah ini untuk mendaftar</p>
+				<form>
+					<div class="form-group">
+						<label for="nama">Nama Lengkap:</label>
+						<input type="text" id="nama" />
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" />
+					</div>
+
+					<div class="form-group">
+						<label for="password">Password:</label>
+						<input type="password" id="password" />
+					</div>
+
+					<div class="form-group-inline">
+						<label>Jenis Kelamin:</label>
+						<div class="radio-item">
+							<input type="radio" name="jk" id="laki-laki" />
+							<label for="laki-laki">Laki-laki</label>
+						</div>
+						<div class="radio-item">
+							<input type="radio" name="jk" id="perempuan" />
+							<label for="perempuan">Perempuan</label>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="form-group-inline">
+						<label>Hobi:</label>
+						<div class="checkbox-item">
+							<input type="checkbox" id="musik" />
+							<label for="musik">Musik</label>
+						</div>
+						<div class="checkbox-item">
+							<input type="checkbox" id="olahraga" />
+							<label for="olahraga">Olahraga</label>
+						</div>
+						<div class="checkbox-item">
+							<input type="checkbox" id="membaca" />
+							<label for="membaca">Membaca</label>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="form-group">
+						<label for="kota">Pilih Kota:</label>
+						<select id="kota">
+							<option value="jakarta">Jakarta</option>
+							<option value="cirebon">Cirebon</option>
+							<option value="karawang">Karawang</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="pesan">Pesan Tambahan:</label>
+						<textarea
+							id="pesan"
+							placeholder="Tulis pesan di sini..."
+						></textarea>
+					</div>
+
+					<button class="myButton">Kirim</button>
+				</form>
+			</section>
+			<aside class="sidebar">
+				<h2>Sidebar</h2>
+				<p>Ini Sidebar buat konten disamping</p>
+			</aside>
+		</div>
+
+		<footer>
+			<p>&copy;2026 Halaman Web Altics, dibuat dengan cinta</p>
+		</footer>
+	</body>
+</html>
